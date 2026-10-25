@@ -1,5 +1,6 @@
 # HackerFabIITB-26b1818
 Hackerfab Entry Submission
+https://www.loom.com/share/0021e25dca754c12824c71075fc5ad9b
 Hi. My name is Dhruv Rao and this is my application of the problem solving skills I've learnt over the years for the hotplate problem and its breakdown. I first started with the knowledge that commercial HotPlates are worth upwards of 1 lakh so I have to work with a budget of around 60% of that. So the following decisions and changes were made keeping that in mind.
 I already had a basic understanding of what I was going to do. The simple solution for a hotplate with 0 deviation is to make every observable point have a connected heat source. So we need to make number of heaters as close to infinite as possible. But this is impossible. So my goal was to maximize number of heaters while keeping a set budget of around INR15000 for the heaters.
 So I chose 25 cartridge heaters each paired with its own MOSFET and heatsink. My idea was to compartmentalize the hotplate into a square grid on a pcb board such that each MOSFET gets its own PWM signal and I chose a 5X5 grid thus the 25. This enables me to have more control over each point on the wafer and accounts for localised temperature change due to external factors. 25 mosfets need 25 pwm signals so I am using 2 16 channel PWM drivers. More on this in the ppt.
